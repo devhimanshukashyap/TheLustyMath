@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Lusty Math</title>
     <link rel="icon" type="image/x-icon" href="./Assets/tlmICON.jpg">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
 </head>
-<body>
 
+<body>
+    <div class="cursor"></div>
+    <div class="hero">
+        <h1>The Lusty Math</h1>
+        <p class="tagline">Solve math puzzles and uncover the secrets of waifus!</p>
+        <div class="button-container">
+            <button id="play-btn" class="btn">Play Now</button>
+            <button id="filter-btn" class="btn">Filter</button>
+        </div>
+    </div>
+
+    <div id="filter-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Filter Options</h2>
+            <p>Enable 18+ content?</p>
+            <button id="enable-18" class="modal-btn">Yes, I'm 18+</button>
+            <button id="disable-18" class="modal-btn">No, Keep it Safe</button>
+            <button id="close-modal" class="modal-btn close">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
+
 </html>
